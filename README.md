@@ -53,7 +53,7 @@ Les informations de perception (clefs du dictionnaire) et le prompt doivent éga
 - Est-ce que cela a un impact (à modèle équivalent) ?  
 
 <p style="color: blue">
-Aucun changement remarqué. Le player reste coincé près du monstre.
+--> Aucun changement remarqué. Le player reste coincé près du monstre.
 </p>
 
 ## Mise en place d'un historique des déplacements
@@ -63,7 +63,7 @@ Mettre en place l'historique des déplacements et le fournir au LLM :
 - Est-ce cela influence positivement le résultat de la simulation ?
 
 <p style="color: blue">
-Cela influence positivement le résultat. Le player ne reste plus bloqué par le monstre mais l'évite.
+--> Cela influence positivement le résultat. Le player ne reste plus bloqué par le monstre mais l'évite.
 </p>
 
 
@@ -83,7 +83,7 @@ Trouvez et implémentez une ou plusieurs amélioration(s) qui permettent d'optim
 - Justifiez en 3 lignes (README.md) ce que votre solution déplace comme charge  
 
 <p style="color: blue">
-Cette amélioration déplace vers la charge algorithmique le calcul du chemin optimal (BFS évitant obstacles et zones dangereuses), qui était auparavant une tâche implicitement demandée au LLM via le prompt ("donne-moi le plus court chemin"). Le LLM conserve cependant l'entière responsabilité de la décision finale : la suggestion n'est qu'une information supplémentaire dans la perception, jamais une contrainte, ce qui préserve l'équilibre de traction contrairement à un filtrage actif des options.
+--> Cette amélioration déplace vers la charge algorithmique le calcul du chemin optimal (BFS évitant obstacles et zones dangereuses), qui était auparavant une tâche implicitement demandée au LLM via le prompt ("donne-moi le plus court chemin"). Le LLM conserve cependant l'entière responsabilité de la décision finale : la suggestion n'est qu'une information supplémentaire dans la perception, jamais une contrainte, ce qui préserve l'équilibre de traction contrairement à un filtrage actif des options.
 </p>
 
 ## Barème - Projet NPC Brain (/20)
